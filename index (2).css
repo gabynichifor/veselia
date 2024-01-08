@@ -1,0 +1,923 @@
+.item-desc {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    position: absolute;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1em;
+    z-index: 1;
+    bottom: 1em;
+    left: 1em;
+    right: 1em;
+}
+
+
+/* Filter controls */
+.simplefilter li, .multifilter li, .sortandshuffle li {
+    color: #999;
+    cursor: pointer;
+    display: inline-block;
+    padding: .3em 0.8em;
+    font-size: 1em;
+    margin: 0 1.5em 0 1.8em;
+    background: none;
+    border-radius: 4px;
+    position: relative;
+}
+.simplefilter li:before {
+    content: '';
+    width: 22px;
+    height: 1px;
+    background-color: #999;
+    position: absolute;
+	-webkit-transform: rotate(-68deg);
+	-moz-transform: rotate(-68deg);
+	-o-transform: rotate(-68deg);
+	-ms-transform: rotate(-68deg);
+    transform: rotate(-68deg);
+    top: 14px;
+    left: -33px;
+}
+.simplefilter li:nth-child(1):before {
+    height: 0;
+}
+.simplefilter li.active {
+    color: #fff;
+    background: #fb0f8f;
+}
+
+/* Inreg */
+.registration-section {
+  background-color: #f2f2f2;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.registration-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.registration-info {
+  margin-bottom: 40px;
+}
+
+.registration-info h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.registration-info p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.registration-form-container {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form-container h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.registration-form-container form {
+  text-align: left;
+}
+
+.registration-form-container label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #666;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.registration-form-container input, select,
+.registration-form-container textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  
+}
+
+.registration-form-container input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.registration-form-container input[type="submit"]:hover {
+  background-color: #555;
+}
+
+#form-message {
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+}
+/*-- banner-modal --*/
+.modal-open .modal {
+  background: rgba(0, 0, 0, 0.48);
+}
+.modal.bnr-modal {
+padding: 0 1em !important;
+}
+.modal-body {
+  padding: 2em;
+}
+.modal-dialog {
+  margin:3em auto 2em;
+}
+.bnr-modal .modal-header {
+  border: none;
+  min-height: 2.5em;
+  padding: 1em 2em 0;
+}
+.bnr-modal button.close {
+  color: #fb0f8f;
+  opacity: .9;
+  font-size: 2.5em;
+}
+.modal-body p {
+  margin-top: 1em; 
+  font-weight: 400;
+}
+/*-- //banner-modal --*/
+.featured-post-area .post-overlay {
+  position: absolute;
+  width: 100%;
+  padding: 2px;
+  z-index: 100;
+  left: 0;
+  bottom: 0;
+margin-top: 7px; }
+
+/* style agentia proprietati publice */
+.clear {
+  clear: both;
+}
+
+/* //style agentia proprietati publice */
+
+/* Shuffle and sort controls */
+select {
+    padding: 1rem 1rem;
+    text-transform: uppercase;
+}
+.sortandshuffle .shuffle-btn {
+    background-color: #dec800;
+}
+.sortandshuffle .sort-btn {
+    background-color: #de0000;
+}
+.sortandshuffle .sort-btn.active {
+    background-color: #9d0000;
+}
+/*----*/
+ul.simplefilter {
+    text-align: center;
+	margin-bottom: 1em;
+}
+
+.section-padding-80 {
+  padding-top:  70px;
+  padding-bottom: 90px;
+}
+
+/*-- response --*/
+@media(max-width:480px){
+.simplefilter li:before {
+    left: -28px;
+}
+.simplefilter li, .multifilter li, .sortandshuffle li {
+    margin: 0 1em 0 1.4em ;
+}
+}
+@media(max-width:414px){
+.simplefilter li, .multifilter li, .sortandshuffle li {
+    margin:0 1em;
+	font-size: 0.9em;
+	padding: .3em 0.5em;
+}
+.simplefilter li:before {
+    left: -25px;
+}
+}
+@media(max-width:375px){
+.simplefilter li, .multifilter li, .sortandshuffle li {
+    margin: 0 0.8em 0 0;
+}
+}
+@media(max-width:320px){
+.simplefilter li:before {
+    left: -16px;
+    top: 10px;
+    width: 18px;
+}
+.simplefilter li, .multifilter li, .sortandshuffle li {
+    margin: 0 0.8em 0 0;
+    padding: .2em 0.4em;
+    font-size: 0.85em;
+}
+}
+
+/* CSS Styling for History and Updates Section */
+.history-updates-section {
+    
+    padding-top:  25px;
+    padding-bottom: 25px;
+  }
+  
+  .history-updates-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .history-carousel {
+    position: relative;
+  }
+  
+  .history-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Adăugare pentru poziționarea butoanelor */
+  }
+  
+  .slide-image img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .slide-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+  }
+  
+  .latest-updates {
+    padding-left: 30px;
+  }
+  
+  .latest-updates h3 {
+    margin-bottom: 20px;
+  }
+  
+  .latest-updates ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .latest-updates li {
+    margin-bottom: 20px;
+  }
+  
+  .update-date {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* CSS for History Carousel */
+  .history-carousel .carousel-inner {
+    position: relative;
+  }
+  
+  .history-carousel .carousel-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .history-carousel .slide-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .history-carousel .slide-content {
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .history-carousel .slide-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .history-carousel .slide-content p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* CSS for Carousel Controls */
+  .history-carousel .carousel-control-prev,
+  .history-carousel .carousel-control-next {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1; /* Adăugare pentru a aduce butoanele în față */
+  }
+  
+  .history-carousel .carousel-control-prev-icon,
+  .history-carousel .carousel-control-next-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-top: -10px;
+  }
+  
+  .history-carousel .carousel-control-prev {
+    left: -20px;
+  }
+  
+  .history-carousel .carousel-control-next {
+    right: -20px;
+  }
+  
+  .history-carousel .carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  
+  .history-carousel .carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .history-carousel .carousel-indicators .active {
+    background-color: #fff;
+  }
+  .history-updates-section {
+    color: #000;
+  }
+
+  .history-carousel .carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1; /* Adăugare pentru a aduce indicatorii în față */
+  }
+  
+  
+  /* CSS for aligning buttons in center */
+  .history-slide .carousel-control-prev,
+  .history-slide .carousel-control-next {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .carousel-indicators li {
+    background-color: black;
+  }
+  
+  .carousel-indicators .active {
+    background-color: black;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    color: black;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: auto;
+    text-align: center;
+    top: 375px;
+  }
+  
+  .carousel-control-prev {
+    margin-top: -200px;
+    margin-left: 15px; 
+  }
+  
+  .carousel-control-next {
+    margin-top: -200px; 
+    margin-right: 15px; 
+  }
+  
+  .slide-image img {
+    border: 5px solid black;
+  }
+  .carousel-control-prev,
+.carousel-control-next {
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev-icon {
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.carousel-control-next-icon {
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1;
+}
+
+.slide-content{
+margin-top: -50px;
+}
+/*Profesorii*/
+.professors-section {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+  }
+  
+  .professor-card {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .professor-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .professor-card h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .professor-card p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+/* Butoanele de control pentru secțiunea Profesori */
+.professors-section .carousel-control-prev,
+.professors-section .carousel-control-next {
+  background-color: black;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.professors-section .carousel-control-prev {
+  left: -120px;
+}
+
+.professors-section .carousel-control-next {
+  right: -120px;
+}
+
+.professors-section .carousel-control-prev:hover,
+.professors-section .carousel-control-next:hover {
+  background-color: #333333;
+  opacity: 1;
+}
+
+
+/* Stilizare pentru secțiunea video */
+video {
+  width: 100%;
+  height: auto;
+}
+.featured-post-area {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+}
+.post-overlay1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.post-meta {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-player {
+  position: relative;
+}
+
+.player-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.video-player.playing .player-overlay {
+  opacity: 1;
+}
+
+.player-overlay .container {
+  text-align: center;
+  color: #fff;
+}
+
+.player-overlay .title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.player-overlay .description {
+  font-size: 18px;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.gallery-item {
+  flex: 0 0 calc(33.333% - 20px);
+  margin: 10px;
+  position: relative;
+}
+
+.gallery-video {
+  width: 100%;
+  height: auto;
+}
+
+.gallery-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.gallery-item:hover::before {
+  opacity: 1;
+  cursor: pointer;
+}
+@media only screen and (min-width: 600px) {
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+video {
+  width: 100%;
+  height: auto;
+}
+@media only screen and (min-width: 768px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+
+ h1, h2, h3, h4{
+        letter-spacing: 3px;
+        font-weight: 300;
+        font-family: 'Felipa', cursive;
+    }
+    
+    /* --arte page-- */
+     
+/*-- inner-banner --*/ 
+.inner_page-banner {
+  text-align: center;
+ 
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+
+}
+
+/*-- //inner-banner --*/ 
+   
+    /*-- //About-inner --*/
+.abut-inner-right h4 {
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 51px;
+  letter-spacing: 2px;
+}
+.abut-inner-left p,.wls-sub-hedder-right p{
+  color: #000;
+  letter-spacing: 1px;
+  line-height: 31px;
+}
+.w3l-abt-sub-txt p ,.w3l-ser-sub-txt p {
+  color: #000;
+  line-height: 30px;
+}
+.w3l-abt-sub-txt h4,.w3l-ser-sub-txt h4 {
+  color: #ea1d5d;
+  font-size: 25px;
+}
+.two-abut-inner-right {
+  background: #ea1d5d;
+}
+.wls-sub-hedder-right {
+  padding: 10em 5em 8em 13em;
+}
+/*-- //About-inner --*/
+
+/* calendar */
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;;
+  font-weight: 500;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.cal-modal-container {
+  background: rgba(0, 0, 0, .4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.cal-modal {
+  background: #1D252C;
+  color: #fff;
+  padding: 40px 60px;
+  text-align: center;
+  
+  h3 {
+    font-size: 37px;
+    font-weight: 900;
+    margin: 0 0 1rem;
+  }
+}
+
+#calendar {
+  display: inline-block;
+  
+  .placeholder {
+    display: none;
+    width: 300px;
+  }
+  
+  .flatpickr-calendar {
+    background: none;
+    border: 0;
+    border-radius: 0;;
+    box-shadow: none;
+    color: #fff;
+    top: 0;
+    
+    .flatpickr-innerContainer {
+      overflow: visible;
+      
+      .flatpickr-weekdays {
+        overflow: visible;
+      }
+    }
+
+    .flatpickr-months {
+      .flatpickr-month {
+        color: inherit;
+        margin-bottom: 10px;
+
+        .flatpickr-current-month {
+          font-size: 16px;
+
+          .numInputWrapper {
+            display: none;
+          }
+        }
+      }
+      
+      .flatpickr-prev-month, .flatpickr-next-month {
+        top: calc(50% - 23px);
+        
+        svg {
+          height: 46px;
+          width: 46px;
+          
+          path {
+            fill: #3DAE2B;
+          }
+        }
+      }
+      
+      .flatpickr-prev-month {
+        left: -60px;
+      }
+      
+      .flatpickr-next-month {
+        right: -60px;
+      }
+    }
+
+    .flatpickr-weekdays {
+      .flatpickr-weekdaycontainer {
+        max-width: 307.875px;
+        padding: 0 10px;
+        position: relative;
+        
+        &::after {
+          content: '';
+          background: #343F48;
+          position: absolute;
+          top: -32px;
+          bottom: -230px;
+          right: 0;
+          width: 1px;
+        }
+        
+        &:last-child::after {
+          content: none;
+        }
+        
+        .flatpickr-weekday {
+          color: #fff;
+          font-weight: 700;
+        }
+      }
+    }
+
+    .dayContainer {
+      box-shadow: none;
+      padding: 0 10px;
+      position: static;
+      
+      &:last-child::after {
+        content: none;
+      }
+    }
+
+    .flatpickr-day {
+      background: #fff;
+      border: 0;
+      color: #1D252C;
+      font-weight: 500;
+      transition: color .1s, background .1s;
+
+      &:hover {
+        background: #3DAE2B;
+        color: #fff;
+      }
+
+      &.flatpickr-disabled, &.flatpickr-disabled:hover {
+        background: none;
+        color: #fff;
+        cursor: default;
+      }
+
+      &.selected:not(.hidden) {
+        &, &:hover, &:focus {
+          background: #37A628;
+          color: #fff;
+        }
+      }
+      
+      &.nextMonthDay, &.prevMonthDay {
+        background: none;
+        color: rgba(#CFD2D3, .1) !important;
+        cursor: default;
+        visibility: visible; 
+      }
+    }
+  }
+  
+  .calendar-events {
+    display: block;
+    justify-content: space-around;
+    margin-top: 30px;
+    min-height: 36px;
+    
+    @media screen and (min-width: 992px) {
+      display: flex;
+      justify-content: space-around;
+    }
+      
+    .event {
+      font-size: 29px;
+      
+      .date {
+        color: #fff;
+        font-weight: 600;
+      }
+      
+      .location {
+        color: #3DAE2B;
+        font-weight: 800;
+        letter-spacing: -.8px;
+      }
+    }
+  }
+}
+/* //calendar */
